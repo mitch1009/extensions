@@ -5,22 +5,22 @@ on:
       - firefox
 jobs:
   build:
-    name: Build Node
     runs-on: ubuntu-latest
-    env:
-      USER: ${{github.event.head_commit.committer.name}}
-      EMAIL: ${{github.event.head_commit.committer.email}}
+    name: Firefox Ext- Made in Malawi
     steps:
-      - name: checkput code
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-
+      - name: checkout code
+        uses: actions/setup-node@v2
+      - name: build step
+        id: building
+        uses: mitch1009/maction@v2
         with:
-         node-version: '14'
-      - run: |
-          git config --global user.email $EMAIL
-          git config --global user.name $USER
-
-          npm install
-          echo $npm_package_version has been pushsed by $USER <EMAIL>
+          who-to-greet: "Ochanza"
+          host: ${{secrets.HOST}}
+          port: ${{secrets.PORT}}
+          user: ${{secrets.USER}}
+          passcode: ${{secrets.PASSCODE}}
+          recipients: '[{"email": "mitch.chanza@gmail.com", "name":"Mitch Chanza"}]'
+          message: ${{ github.event.head_commit.message }}
+          # upgrades to v2
+      - name: final scripts
 

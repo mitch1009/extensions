@@ -1,12 +1,18 @@
 {
   "name": "extensions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome and Firefox Extensions - Made In Malawi 🇲🇼",
   "main": "index.js",
   "scripts": {
     "compileCSS": "gulp",
     "commit": "git add . && git commit -m",
-    "push": "git push --follow-tags"
+    "push": "git push --follow-tags",
+    "build": "tsc && git add . && git commit -m",
+    "test": "git push --follow-tag",
+    "gulp": "gulp ",
+    "twatch": "tsc",
+    "tag": "var=\"$(git tag -a -m \" v$npm_package_version release\" v$npm_package_version)\" [ \"$var\" == \"fatal: tag 'v1.0.0' already exists\" ] && echo tag exists || git push --follow-tags",
+    "comTag": "git push --follow-tag"
   },
   "repository": {
     "type": "git",

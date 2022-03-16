@@ -1,0 +1,27 @@
+{
+  "name": "extensions",
+  "version": "1.0.0",
+  "description": "Chrome and Firefox Extensions - Made In Malawi 🇲🇼",
+  "main": "index.js",
+  "scripts": {
+    "compileCSS": "gulp",
+    "commit": "git add . && git commit -m",
+    "push": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/mitch1009/extensions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitch1009/extensions/issues"
+  },
+  "homepage": "https://github.com/mitch1009/extensions#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
+}

@@ -1,0 +1,26 @@
+name: Firefox Extension CI
+on:
+  push:
+    branches:
+      - firefox
+jobs:
+  build:
+    name: Build Node
+    runs-on: ubuntu-latest
+    env:
+      USER: ${{github.event.head_commit.committer.name}}
+      EMAIL: ${{github.event.head_commit.committer.email}}
+    steps:
+      - name: checkput code
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+
+        with:
+         node-version: '14'
+      - run: |
+          git config --global user.email $EMAIL
+          git config --global user.name $USER
+
+          npm install
+          echo $npm_package_version has been pushsed by $USER <EMAIL>
+

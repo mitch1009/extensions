@@ -23,5 +23,8 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@vercel/ncc": "^0.33.3"
   }
 }

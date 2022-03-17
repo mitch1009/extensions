@@ -9,8 +9,10 @@ jobs:
     name: Firefox Ext- Made in Malawi
     steps:
       - name: checkout code
+        uses: actions/checkout@v2
+      - name: nodejs
         uses: actions/setup-node@v2
-        with: 
+        with:
           node-version: "14"
       - name: build step
         id: building

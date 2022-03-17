@@ -1,7 +1,7 @@
 {
   "name": "extensions",
   "version": "1.0.1",
-  "description": "Chrome and Firefox Extensions - Made In Malawi 🇲🇼",
+  "description": "Firefox Extensions - Made In Malawi 🇲🇼",
   "main": "index.js",
   "scripts": {
     "compileCSS": "gulp",

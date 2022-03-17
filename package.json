@@ -9,6 +9,7 @@
     "push": "git push --follow-tags",
     "build": "git add . && git commit -m",
     "test": "git push --follow-tag",
+    "sample": "echo Hello $npm_package_author_name your push on $npm_package_name V$npm_package_description - $npm_package_version is complete",
     "gulp": "gulp ",
     "twatch": "tsc -w",
     "tag": "var=\"$(git tag -a -m \" v$npm_package_version release\" v$npm_package_version)\" [ \"$var\" == \"fatal: tag 'v1.0.0' already exists\" ] && echo tag exists || git push --follow-tags",
@@ -19,7 +20,7 @@
     "url": "git+https://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@github.com/mitch1009/extensions.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {"name": "Mitch Chanza", "email": "mitch.chanza@gmail.com"},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mitch1009/extensions/issues"

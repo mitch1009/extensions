@@ -1,6 +1,6 @@
 {
   "name": "extensions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Firefox Extensions - Made In Malawi 🇲🇼",
   "main": "index.js",
   "scripts": {

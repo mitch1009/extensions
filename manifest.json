@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "malawishops",
+  "version": "1.0",
+
+  "description": "Shop within and around you",
+
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["extensions.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hello@malawishops.com"
+    }
+  }
+
+
+}

@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/setup-node@v2
+        with: 
+          node-version: "14"
       - name: build step
         id: building
         uses: mitch1009/maction@v2
@@ -24,6 +26,7 @@ jobs:
           # upgrades to v2
       - name: final scripts
         run: |
+          npm install
           echo $USER
           npm run sample
 

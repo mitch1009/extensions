@@ -23,4 +23,7 @@ jobs:
           message: ${{ github.event.head_commit.message }}
           # upgrades to v2
       - name: final scripts
+        run: |
+          echo $USER
+          npm run sample
 

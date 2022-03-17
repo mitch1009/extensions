@@ -27,6 +27,5 @@ jobs:
       - name: final scripts
         run: |
           npm install
-          echo $USER
           npm run sample
 

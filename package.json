@@ -15,6 +15,7 @@
     "tag": "var=\"$(git tag -a -m \" v$npm_package_version release\" v$npm_package_version)\" [ \"$var\" == \"fatal: tag 'v1.0.0' already exists\" ] && echo tag exists || git push --follow-tags",
     "comTag": "git push --follow-tag"
   },
+  "private":"true",
   "repository": {
     "type": "git",
     "url": "git+https://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@github.com/mitch1009/extensions.git"
